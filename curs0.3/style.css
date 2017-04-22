@@ -1,0 +1,153 @@
+* {
+	margin:0;
+	padding: 0;
+}
+.content {
+	height: 1480px;
+	width: 100%;
+}
+.header img {
+	width:100%;
+}
+.footer img {
+	width:100%;
+}
+.content .top-content i {
+	color: purple;
+}
+.content .top-content .p1 {
+	color: grey	;
+}
+.top-content {
+	height: 232px;
+	width: 45%;
+	float: left;
+	padding-left: 152px;
+
+}
+.top-content-logo {
+	height: 232px;
+	width: 45%;
+	float: left;
+	padding-left: 324px;
+}
+.content .top-content .p2 {
+	font-size: 27px;
+	color: purple;
+}
+.content .top-content .p3 {
+	font-size: 14px;
+}
+.content .top-content p {
+	margin-top: 33px;
+}
+.clearfix {
+	clear: both;
+}
+.form {
+	margin-left: 10%;
+	margin-right:-18%;
+	color: grey;
+	height: 300px;
+}
+.content .form .row1 {
+	float:left;
+	width: 30%;
+
+}
+.content .form .row2 {
+	float:left;
+	width: 30%;
+}
+.content .form .row3 {
+	float:left;
+	width: 30%;
+}
+.content .form .row4 {
+	float:left;
+	width: 30%;
+}
+.content .form .row5 {
+	float:left;
+	width: 30%;
+}
+.content .form .row5 .small-input {
+	width: 100px;
+	margin-right: 14px;
+}
+.content .form .row6 {
+	float:left;
+	width: 30%;
+}
+.content .form .row6 .small-input {
+	width: 100px;
+	margin-right: 14px;
+}
+.content .form {
+	font-size: 15px;
+}
+.content .form input {
+	background-color: #f7f7f7;
+	width: 334px;
+	height: 48px;
+
+}
+.border1 {
+	margin-top:50px;
+	width: 1260px;
+}
+.border2 {
+	margin-top:50px;
+	width: 1260px;
+}
+.content .form .card-content {
+	height: 74px;
+
+
+}
+.content .form .card-content i {
+	color: purple;
+}
+.content .form .card-content .card-logo {
+	float:left;
+}
+.content .form .card-content .card-btn button {
+	height: 50px;
+    width: 125px;
+	margin-left: 950px;
+	color: purple;
+	float:left;
+}
+.content .form .bank-information {
+	height: 102px;
+
+}
+.content .form .bank-information .bank1 {
+	float:left;
+	margin-right: 128px;
+}
+.content .form .bank-information .bank2 {
+	float:left;
+	margin-right: 128px;
+}
+.content .form .bank-information .bank3 {
+	float:left;
+}
+.content .form .bank-information .bank3 .small-input {
+	width: 100px;
+	margin-right: 14px;
+}
+.content .form .add-card button {
+	background-color: purple;
+    color: white;
+    border-radius: 4px;
+	height: 38px;
+    width: 150px;
+    border: 0;
+    margin-left: 36%;
+}
+input {
+	border-radius: 10px;
+	text-decoration: none;
+	border:1px solid black;
+}
