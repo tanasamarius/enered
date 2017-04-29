@@ -1,0 +1,76 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body {
+    background-color: green;
+}
+.d1 {
+    float: left;
+    max-width: 22%
+}
+.d2 {
+    float: left;
+    max-width: 22%
+}
+.d3 {
+    float: left;
+    max-width: 22%
+}
+.d4 {
+    float: left;
+    max-width: 22%
+}
+.animate {
+ 	background-color: magenta;
+ 	width: 100px;
+ 	height: 200px;
+ 	display: none;
+ }
+
+.animate-color {
+	animation-name: redToYellow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.animate-position {
+	position: relative;
+	animation-name: leftToRight ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+
+ @keyframes redToYellow {
+    9%{background-color: red;}
+    10%{background-color: blue;}
+    20%{background-color: lightgrey;}
+    30%{background-color: magenta;}
+    40%{background-color: yellow;}
+    50%{background-color: purple;}
+    60%{background-color: black;}
+    70%{background-color: green;}
+    80%{background-color: #123332;}
+    90%{background-color: #003d32;}
+}
+
+ @keyframes leftToRight {
+ 	0% {left: :0 0px;top: 0px;transform:rotate(0deg);}  
+ 	
+ 	100% {left:0px;left: 0px; transform: rotate(445deg)}
+
+ }
+ .circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+ }
+ p {
+    padding: 24px;
+    font-size: 29px;
+    color: white;
+ }
