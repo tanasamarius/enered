@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+h3 {
+	color: red;
+	text-decoration: underline;
+
+
+}
+p {
+	color: blue;
+}
+.person {
+	float: left;
+	padding: 17px;
+	border:1px solid blue;
+	background-color: grey;
+	max-width: 10%;
+	min-height: 400px;
+	max-height: 400px;
+}
+
+.animate {
+	float: left;
+	display: none;
+	margin: 2.4px;
+}
+.imgs {
+	width: 71px;
+    height: 34px;
+}
