@@ -33,11 +33,11 @@
 				password : document.getElementById('password').value
 
 			}
-			console.log(myObject);
+			
 			var myObject = JSON.stringify(myObject);
-			console.log(myObject);
+			
 			myObject = JSON.parse(myObject);
-			console.log(myObject);
+			
 
 			
 		}
@@ -49,7 +49,7 @@
 
 	document.getElementById('getData').addEventListener('click', function() {
 		getData();
-		var animate = document.getElementsByClassName('animate');
+		var animate = document.getElementsByClassName('animate'); //show disabled pic.
 		for(var i = 0 ; i < animate.length ; i++) {
 			animate[i].style.display = "block";
 		}
@@ -71,7 +71,7 @@
 	function createElements(bigData) {
 		for(var i = 0 ; i < bigData.results.length ; i++) {
 			createPerson(bigData.results[i]);
-			console.log();
+			
 		}
 	}
 
@@ -86,7 +86,8 @@
 		//append text to element
 		name.append(textName);
 		divPerson.append(name);
-		console.log(personData);
+
+		
 
 
 
@@ -149,6 +150,33 @@
 		//append text to element
 		mass.append(textMass);
 		divPerson.append(mass);
+
+
+
+		// var homeworld = document.createElement('p');
+		// homeworld.setAttribute('class', 'homeworld');
+		// var homeWorld = document.createTextNode(personData.homeworld);
+		// //append text to element
+		// homeworld.append(homeWorld);
+		// divPerson.append(homeworld);
+
+
+
+		console.log(personData.homeworld)
+
+		var arrayHomeworld = personData.homeworld.split('/');
+		console.log(arrayHomeworld);
+
+		var homeworldId = arrayHomeworld[arrayHomeworld.length - 2];
+		console.log(homeworldId);
+
+		var homeworld = document.createElement('a');
+		homeworld.setAttribute('class', 'homeworld');
+		homeworld.setAttribute('href', 'planets.html?' + homeworldId);
+		var textHomeworld = document.createTextNode('Planet '+ homeworldId);
+		homeworld.append(textHomeworld);
+		divPerson.append(homeworld);
+
 
 		document.getElementsByClassName('sw-list')[0].append(divPerson);
 	

@@ -13,15 +13,7 @@ h3 {
 p {
 	color: blue;
 }
-.person {
-	float: left;
-	padding: 17px;
-	border:1px solid blue;
-	background-color: grey;
-	max-width: 10%;
-	min-height: 400px;
-	max-height: 400px;
-}
+
 
 .animate {
 	float: left;
