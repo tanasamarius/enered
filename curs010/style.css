@@ -1,0 +1,49 @@
+* {
+  margin:0;
+  padding:0;
+}
+.popup {
+  display:none;
+}
+.popup img {
+  display:none;
+}
+input[type=radio].inputs{
+  margin-left:25px;
+}
+
+.xo {
+  background-color: #1d0f0f;
+}
+.xo .container {
+  max-width:630px;
+  margin-top:100px;
+  position: relative;
+}
+.xo .container .col-md-4 {
+  border: 5px solid lightblue;
+  height:200px;
+}
+h1 {
+  font-size: 150px;
+  text-align: center;
+  color:lightgreen;
+}
+.line{
+  position: absolute;
+  height:10px;
+  width:80%;
+  margin-top:47%;
+  margin-left: 10%;
+  background-color: red;
+  display: none;
+}
+.line.vertical {
+  transform: rotate(90deg);
+}
+.line.stanga {
+  transform: rotate(45deg);
+}
+.line.dreapta {
+  transform: rotate(-45deg);
+}
