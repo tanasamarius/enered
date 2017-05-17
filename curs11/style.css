@@ -1,0 +1,138 @@
+* {
+  margin:0;
+  padding:0;
+}
+header  {
+  background-color: #f1f1f1;
+  height: 60px;
+  padding: 0 30px;
+}
+header .container-fluid {
+  background-color: #f1f1f1;
+  padding: 0 30px;
+  height: 60px;
+}
+header .logo {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c7/GoogleLogoSept12015.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position:center;
+  width: 90px;
+  height: 60px;
+  display: inline-block;
+}
+.search {
+  margin-left: 80px;
+  height: 60px;
+  display: inline-block;
+  position: absolute;
+  padding-top: 15px;
+  width: calc(100% - 500px);
+  max-width: 600px;
+
+}
+
+.search input{
+  height: 30px;
+  min-width: 200px;
+}
+header .btn-gol {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: white;
+  margin-top: 14px;
+  margin-left:10px;
+}
+header .account .btn-gol {
+  background-color: #244244;
+
+
+}
+header .aplication .btn-gol {
+  background-color: red;
+
+
+}
+header .notification .btn-gol {
+  background-color: #000244;
+
+
+}
+header .account {
+  position: relative;
+}
+header .account .dropdown-content {
+  position: absolute;
+  width: 370px;
+  left: -330px;
+  border: 1px solid grey;
+  top: 60px;
+  display: none;
+  z-index: 10;
+  background-color: white;
+}
+
+
+.main-content {
+  padding: 0 30px;
+}
+.main-content .sidebar {
+  width: 170px;
+  
+  min-height: 200px;
+  float: left;
+}
+.main-content .mail-content {
+  width: calc(100% - 170px);
+  
+  min-height: 200px;
+  float: left;
+}
+.main-content .tabs .tab-step {
+  border:1px solid #e5e5e5;
+  border-top:3px solid #e5e5e5;
+  background-color: #f1f1f1;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.main-content .tabs {
+
+}
+
+.main-content .tabs .principal:hover,
+.main-content .tabs .principal.active{
+  border-top: 3px solid grey;
+}
+.main-content .tabs  .social:hover,
+.main-content .tabs .social.active{
+  border-top: 3px solid blue;
+}
+.main-content .tabs  .offers:hover,
+.main-content .tabs .offers.active{
+  border-top: 3px solid green;
+}
+.main-content .tabs .tab-step.active{
+  background-color: #ffffff;
+}
+.main-content .mail-content .email-list .email-items {
+
+  display: none;
+}
+.main-content .mail-content .email-list .email-items.active-items {
+  display: block;
+}
+.main-content .mail-content .email-list .email-items .item {
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #f1f1f1;
+  padding: 10px 15px;
+}
+.main-content .mail-content .email-list .email-items .item.active {
+  background-color: #ffffff;
+}
+
