@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+.header {
+	padding: 30px 15px;
+	
+
+}
+.header img {
+	width: 200px;
+	height: 200px;
+}
+.header .name {
+	display: inline-block;
+    margin-left: -23px;
+    padding-bottom: 9px;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 5px;
+    background-color: #27aae1;
+    color: white;
+    width: 263px;
+    height: 50px;
+    font-weight:700;
+
+}
+.header .name p {
+	margin-top: 3px;
+}
+.content {
+	min-height:600px;
+
+}
+.content .left {
+	height: 600px;
+	width: 30%;
+	float: left;
+	border-right: 3px solid lightgrey;
+	padding: 14px;
+    padding-right: 38px;
+    margin-top: -22px;
+}
+.content .right {
+	height: 600px;
+	width: 70%;
+	float: left;
+	padding-right: 231px;
+    padding-left: 50px;
+    margin-top: -11px;
+
+
+}
+.footer {
+	min-height: 360px;
+	background-color: #4a4f5a;
+}
+.content h5 {
+	display: inline-block;
+	color: #27aae1;
+	font-weight: 700;
+}
+.content p {
+	color: #27aae1;
+	display: inline-block;
+	float: right;
+
+}
+.content .left .contact div {
+	border-bottom: 2px solid lightgrey;
+}
+.content .left .contact h3 {
+	    margin-top: 237px;
+}
+.content h3 {
+	font-weight: 700;
+    color: #27aae1;
+}
+.content h4 {
+	margin-left: 30px;
+	color: #27aae1;
+}
+.content .right h5 {
+	margin-left: 60px;
+}
+.content .right p {
+	margin-left: 60px;
+}
+.footer-inner .left {
+	width: 50%;
+	float: left;
+	min-height: 200px;
+}
+.footer-inner .right {
+	width: 50%;
+	float: left;
+	min-height: 200px;
+}
+.footer-inner .left h3{
+	font-weight: 700;
+    color: #27aae1;
+    margin:15px;
+}
+.footer-inner .left div {
+	margin-left:15px;
+	margin-bottom: 54px;
+}
+.footer-inner .left h4 {
+	color: #27aae1;
+}
+.footer-inner .right h3,
+.footer-inner .right h5 {
+	margin:15px;
+	font-weight: 700;
+}
+.footer-inner .right h3, 
+.footer-inner .right h5, 
+.footer-inner .right p{
+    color: #27aae1;
+    
+}
+.footer-inner .right p {
+	padding: 16px;
+    padding-right: 125px;
+    margin-right: 140px;
+    margin-left: 20px;
+}
