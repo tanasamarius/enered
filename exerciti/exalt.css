@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image:url(http://www.pathofexile.com/public/chris/act3_screenshot4.jpg); 
+}
+.container {
+	max-width: 100px;
+}
+.container .text {
+	margin-top:50px;
+	font-size: 50px;
+}
+.container .text input {
+	font-size: 20px;
+}
+
+.text {
+	float: left;
+}
+.value {
+	float: left;
+}
