@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+body {
+	background-image: url(imgs/header.png);
+	background-repeat: no-repeat;
+}
+.header {
+ position: relative;
+ height: 560px;
+}
+
+.carousel-inner h4,
+.carousel-inner h1 {
+	text-align: center;
+}
+#myCarousel {
+	margin-top: 100px;
+}
+.carousel-indicators {
+	margin-bottom: -255px;
+}
+.item {
+	color: white;
+}
+
+.tx1 {
+	color: white;
+}
+.tx2 {
+	color: blue;	
+}
+.tx3 {
+	color: green;
+}
+.header ol  {
+	display: inline-block;
+}
+.header ol li {
+	display: inline-block;
+	color: white;
+	margin: 9px;
+}
+.homebtn {
+	padding-left: 360px;
+
+}
+#business {
+	font-family: 'Indie Flower', cursive;
+	font-size: 46px;
+	color: orange;
+
+}
+.btn {
+	margin-left: 607px;
+    /* text-align: center; */
+    background-color: cornflowerblue;
+    color: white;
+}
+.container .container-head h1 {
+	text-align: center;
+	color: #709dca;
+}
+.container .container-head h6 {
+	color: #b5b9bb;
+	text-align: center;
+}
+.container {
+	margin: 0 auto;
+}
+.container .box {
+	float: left;
+
+	height: 180px;
+	width: 570px;
+	padding-right: 110px;
+
+}
+.container .box h4.
+.container .box h6 {
+	text-align: right;
+
+}
+.container .box .imgPosition {
+	width: 55px;
+	height: 175px;
+	display: inline-block;
+	float: left;
+}
+.container2 {
+	height: 620px;
+	width: 100%;
+}
+.container2 .right-content {
+	height: 100%;
+	width: 50%;
+	float: left;
+	background-color: lightblue;
+}
+.container2 .right-content img {
+	max-height: 100%;
+}
+.container2 .left-content {
+	height: 100%;
+	width: 50%;
+	float: left;
+	background-color: #ffc155;
+	color: white;
+}
+.container2 .left-content h1,
+.container2 .left-content h6 {
+	padding: 41px;
+	word-spacing: 5px;
+	line-height: 21px;
+}
+.container3 {
+	height: 350px;
+	width: 100%;
+}
+.container3 h1 {
+	margin-top: 0;
+	color: #709dca;
+}
+.container3 h1,
+.container3 h6 {
+	text-align: center;
+}
+.container3 .seeYou {
+	border-bottom: 4px solid #ffc155;
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 94px;
+}
+.container3 .menubars {
+	height: 100px;
+	width: 570px;
+	margin: 0 auto;
+	margin-top: 67px;
+}
+.container3 .menubars ol {
+	text-align: center;
+}
+.container3 .menubars ol li {
+	display: inline-block;
+    margin: 10px;
+    border: 1px;
+    border-radius: 10px;
+    width: 90px;
+    height: 24px;
+    
+}
+.container3 .menubars ol li a {
+	text-decoration: none;	
+	color: black;
+}
+.container3 .menubars ol li:hover {
+	background-color: #709dca;
+	
+}
+.container3 .menubars ol li a:hover {
+	color: white;
+}
+.container4 {
+	height: 560px;
+	width: 100%;
+	background-color: lightblue;
+}
+.container4 .imgShow {
+	display: none;
+}
