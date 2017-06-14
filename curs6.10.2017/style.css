@@ -92,9 +92,11 @@ body {
 }
 .pre {
 	float: left;
-	margin: 10px;
+    margin-right: 23px;
+    margin-left: 5px;
 }
 .bot-info {
+	padding-top: 19px;
 	border-top: 2px solid #a3abb3;
     margin-top: 26px;
     background-color: white;
@@ -106,12 +108,12 @@ body {
 .footer {
 	width: 100%;
 	height: 200px;
-	margin-top: 330px;
+	margin-top: 290px;
 	text-align: center;
 }
-.footer a {
+.footer .see-all {
 	color: orange;
-	font-size: 25px;
+	font-size: 15px;
 }
 .button.btn {
 	border: 1px solid grey;
@@ -121,4 +123,26 @@ body {
 .under-img {
 	background-color: white;
 	padding-left: 5px;
+}
+.footer .selector-dl {
+	width: 450px;
+	height:50px;
+	background-color: grey;
+	margin: 0 auto;
+	padding-top: 15px;
+	color: white;
+}
+.footer .selector-dl p {
+	display: inline-block;
+}
+.footer .selector-dl a {
+	color: white;
+	margin-left: 10px;
+}
+.see-als {
+	color: grey;
+}
+.see-als:hover {
+	color: orange;
+	text-decoration-line: none;
 }
