@@ -1,0 +1,54 @@
+.box {
+	width: 33%;
+	float: left;
+	border:2px solid #fff;
+}
+p {
+	color: lightblue;
+	padding: 10px;
+
+}
+.box h1 {
+	padding: 10px;
+	color: #a3a3c3;
+}
+.description-box .box {
+	margin: 0  auto;
+	background-color: #4c0000;
+}
+.description-box .box:first-child {
+	margin-right: 5px;
+	margin-left: 1px;
+}
+.description-box .box:last-child {
+	margin-left: 5px;
+}
+.form-box .box {
+	padding: 10px;
+	background-color: #4c0000;
+}
+.form-box .box:first-child {
+	margin-right: 5px;
+	margin-left: 1px;
+}
+.form-box .box:last-child {
+	margin-left: 5px;
+}
+.form-box .box button {
+	width: 100%;
+}
+.magic {
+
+
+
+}
+.magic img {
+	width: 33%;
+	display: inline-block;
+	
+	
+}
+.result p {
+	display: inline-block;
+	width: 33%;
+}
