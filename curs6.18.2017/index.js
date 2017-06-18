@@ -100,6 +100,9 @@
 		var buttons = document.getElementsByTagName('button');
 		for(var i = 0; i < buttons.length; i ++){
 			buttons[i].addEventListener('click', function(){
+				if(this.parentElement.getElementsByTagName('p').length > 0) {
+					this.parentElement.removeChild(this.parentElement.lastChild);
+				}
 				var inputs = this.parentElement.getElementsByTagName('input');
 				var textNode = document.createTextNode('name: ' + inputs[0].value + ' password: ' + inputs[1].value);
 				var paragraph = document.createElement('p');
