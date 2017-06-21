@@ -1,119 +1,111 @@
-(function(){
-	var data = {
-		"items": [
-			{
-				"title" : " this is the 1 item title",
-				"description": "first description lorem ipsum sit dolor amet lorem description first description lorem ipsum sit dolor amet lorem description first description lorem ipsum sit dolor amet lorem description first description lorem ipsum sit dolor amet lorem description first description lorem ipsum sit dolor amet lorem "
-			},
-			{
-				"title" : " this is the 2 item title",
-				"description": "second description lorem ipsum sit dolor amet lorem description first description lorem ipsum sit dolor amet lorem description first description lorem ipsum sit dolor amet lorem description first description lorem ipsum sit dolor amet lorem description first description lorem ipsum sit dolor amet lorem "
-			},
-			{
-				"title" : " this is the 3 item title",
-				"description": "third description lorem ipsum sit dolor amet lorem description first description lorem ipsum sit dolor amet lorem description first description lorem ipsum sit dolor amet lorem description first description lorem ipsum sit dolor amet lorem description first description lorem ipsum sit dolor amet lorem "
-			},	
-		]
-	}
-	function createElements() {
-		for(var i = 0; i < data.items.length ; i++){
-			var divBox = document.createElement('div');
-			divBox.setAttribute('class', 'box');
-			var title = document.createElement('h1');
-			var titleText = document.createTextNode(data.items[i].title);
-			title.append(titleText);
-
-			var description = document.createElement('p');
-			var descriptionText = document.createTextNode(data.items[i].description);
-			description.append(descriptionText);
-
-
-			divBox.append(title);
-			divBox.append(description);
-
-			document.getElementsByClassName('description-box')[0].append(divBox);
-
-		}
-	}
-	createElements();
-
-	var items2 = [
+(function() {
+	
+	var items= [
 		{
-			"title": "this is the 1 form",
-			"name": "marius",
-			"password": "password",
-			"submit": "Go to"
+			"title": "this is the title 1 ",
+			"input1": "adelina",
+			"input2": "adelina",
+			"input3": "1234",
 		},
 		{
-			"title": "this is the 2 form",
-			"name": "mada",
-			"password": "fsadfsa",
-			"submit": "Submit"
+			"title": "this is the title 2 ",
+			"input1": "adelina2",
+			"input2": "adelina2",
+			"input3": "146356544",
 		},
 		{
-			"title": "this is the 3 form",
-			"name": "teddyu",
-			"password": "gfdddfgfg",
-			"submit": "Login"
+			"title": "this is the title 3",
+			"input1": "adelina3",
+			"input2": "adelina3",
+			"input3": "1276575634",
 		}
-
 	];
-	function createForm() {
-		for(var i = 0 ; i < items2.length ; i++) {
-			//div wrapper
-			var formBox = document.createElement('div');
-			formBox.setAttribute('class', 'box');
-			//create title
-			var title = document.createElement('h1');
-			var titleText = document.createTextNode(items2[i].title)
-			title.append(titleText);
-			//create name input
-			var nameInput = document.createElement('input');
-			nameInput.setAttribute('type', 'text');
-			nameInput.setAttribute('placeholder', 'name');
-			nameInput.setAttribute('class', 'form-control');
-			nameInput.setAttribute('value', items2[i].name);
-			//create password input
-			var passwordInput = document.createElement('input');
-			passwordInput.setAttribute('type', 'password');
-			passwordInput.setAttribute('placeholder', 'name');
-			passwordInput.setAttribute('class', 'form-control');
-			passwordInput.setAttribute('value', items2[i].password);
-			//create button 
-			var submitButton = document.createElement('button');
-			submitButton.setAttribute('class', 'btn btn-success');
-			var submitButtonText = document.createTextNode(items2[i].submit);
-			submitButton.append(submitButtonText);
 
-			formBox.append(title);
-			formBox.append(nameInput);
-			formBox.append(passwordInput);
-			formBox.append(submitButton);
+	// <div class="item col-md-3">
+	// 			<h1 class="text-center">Title</h1>
+	// 			<input class="form-control" name="name" type="text">
+	// 			<input class="form-control" name="prenume" type="text">
+	// 			<input class="form-control" name="parola" type="password">
+	// 			<button class="btn btn-warning">Give me data</button>
+	// 			<p>Inputs results:</p>
+	// 		</div>
 
-			document.getElementsByClassName('form-box')[0].append(formBox);
+
+	document.getElementById('add').addEventListener('click', function(){
+
+
+		 function createElements(){
+		 	for(var i = 0; i < items.length; i++){
+			 	var divBox = document.createElement('div');
+			 	divBox.setAttribute('class', 'item col-md-3');
+
+			 	var title = document.createElement('h1');
+			 	title.setAttribute('class', 'text-center')
+			 	var titleText = document.createTextNode(items[i].title);
+			 	title.append(titleText);
+
+			 	var name = document.createElement('input');
+			 	name.setAttribute('class', 'form-control');
+			 	name.setAttribute('type', 'text');
+			 	name.setAttribute('name', 'name');
+			 	name.setAttribute('value', items[i].input1);
+
+			 	var prenume = document.createElement('input');
+			 	prenume.setAttribute('class', 'form-control');
+			 	prenume.setAttribute('type', 'text');
+			 	prenume.setAttribute('name', 'prenume');
+			 	prenume.setAttribute('value', items[i].input2);
+
+			 	var password = document.createElement('input');
+			 	password.setAttribute('class', 'form-control');
+			 	password.setAttribute('type', 'password');
+			 	password.setAttribute('name', 'password');
+			 	password.setAttribute('value', items[i].input3);
+
+			 	var button = document.createElement('button');
+			 	button.setAttribute('class', 'btn btn-warning');
+			 	buttonText = document.createTextNode('Give me data');
+			 	button.append(buttonText);
+
+			 	var paragraph = document.createElement('p');
+			 	var paragraphText = document.createTextNode('Inputs results: ')
+			 	paragraph.append(paragraphText);
+
+			 	divBox.append(title);	
+			 	divBox.append(name);
+			 	divBox.append(prenume);
+			 	divBox.append(password);
+			 	divBox.append(button);
+			 	divBox.append(paragraph);
+
+			 	document.getElementsByClassName('container')[0].append(divBox);
+			 	
+		 	}
 
 		}
-		
-	}
-	createForm();
-	function bindEvent() {
-		var buttons = document.getElementsByTagName('button');
-		for(var i = 0; i < buttons.length; i ++){
-			buttons[i].addEventListener('click', function(){
-				if(this.parentElement.getElementsByTagName('p').length > 0) {
-					this.parentElement.removeChild(this.parentElement.lastChild);
-				}
-				var inputs = this.parentElement.getElementsByTagName('input');
-				var textNode = document.createTextNode('name: ' + inputs[0].value + ' password: ' + inputs[1].value);
-				var paragraph = document.createElement('p');
-				paragraph.setAttribute('display', 'inline-block');
-				paragraph.setAttribute('class', 'form-control');
-				paragraph.append(textNode);
-				this.parentElement.append(paragraph);
-			});
-		}
-	}
-	bindEvent();
+
+		 createElements();
+
+		 function results(){
+			 var buttons = document.getElementsByClassName('btn-warning');
+			 	for(var i = 0; i < buttons.length; i++){
+			 		buttons[i].addEventListener('click', function(){
+					var inputs = this.parentElement.getElementsByTagName('input');
+					var textNode = this.parentElement.getElementsByTagName('p')[0].innerHTML = 'name: ' + inputs[0].value + ' password: ' + inputs[1].value;
+
+			 	});
+			 }
+		}	 	
+		results()
+	});	
+	document.getElementsByClassName('footer')[0].addEventListener('click', function(){
+    var hideMenu = this.parentElement.getElementsByClassName('footer-info')[0];
+    if(hideMenu.style.display == 'block'){
+      hideMenu.style.display = 'none';
+    }else{
+      hideMenu.style.display = 'block';
+    }
+  });
 
 
 })();

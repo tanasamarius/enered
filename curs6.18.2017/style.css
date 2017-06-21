@@ -1,54 +1,26 @@
-.box {
-	width: 33%;
-	float: left;
-	border:2px solid #fff;
-}
-p {
-	color: lightblue;
-	padding: 10px;
+* {
+	margin: 0;
+	padding: 0;
 
 }
-.box h1 {
-	padding: 10px;
-	color: #a3a3c3;
+body {
+	background-color: lightgrey;
 }
-.description-box .box {
-	margin: 0  auto;
-	background-color: #4c0000;
-}
-.description-box .box:first-child {
-	margin-right: 5px;
-	margin-left: 1px;
-}
-.description-box .box:last-child {
-	margin-left: 5px;
-}
-.form-box .box {
-	padding: 10px;
-	background-color: #4c0000;
-}
-.form-box .box:first-child {
-	margin-right: 5px;
-	margin-left: 1px;
-}
-.form-box .box:last-child {
-	margin-left: 5px;
-}
-.form-box .box button {
-	width: 100%;
-}
-.magic {
-
-
+.footer {
+	position:fixed;
+    left:0px;
+    bottom:0px;
+    height:54px;
+    width:100%;
+    background:#999;
 
 }
-.magic img {
-	width: 33%;
-	display: inline-block;
-	
-	
+.openClose {
+	background-color: red;
 }
-.result p {
-	display: inline-block;
-	width: 33%;
+.footer-info {
+	background-color: black;
+}
+#add {
+	    position: fixed;
 }
