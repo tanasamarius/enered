@@ -42,6 +42,21 @@
 	var reverseArray = resultArray.join('@');
 	//console.log(reverseArray);
 
+
+	function manipulateData () {
+		var string = 'lorem ipsum . sit dolor . amet , asomdasd ,somthgings@';
+		var string1 = string;
+		var string2 = string;
+		var string3 = string;
+		var split1 = string.split('.');
+		console.log(split1);
+		var split2 = string3.split(',');
+		console.log(split2);
+		var split3 = string3.split('@');
+		console.log(split3);
+		
+	}
+	manipulateData();
 	
 
 
